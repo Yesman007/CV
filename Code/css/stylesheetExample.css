@@ -40,3 +40,25 @@ h3 {
   margin: 10px;
   padding: 12px;
 }
+
+@keyframes divcolor{
+  0% {background-color:red;
+  transform: translateY(200px)}
+  50%{background-color: yellow;
+  border-radius:50%}
+  100%{background-color:blue;
+  transform:rotate(90deg);}
+  
+
+}
+
+.div{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: divcolor;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: lease-in;
+  animation-direction: alternate;
+}
