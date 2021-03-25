@@ -86,4 +86,5 @@ background-color: grey;
 
   .workExperience{
     display: inline-flex;
+    width : 100%;
   }
