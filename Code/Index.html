@@ -124,7 +124,43 @@
                                                     <img src="./images/daniel.jpg" alt="CodeSpace Logo" width="300"
                                                         height="350">
 
-                        <div class="div"></div>                                
+
+
+                                                    <form action="info.php" method="post">
+                                                        <label for="name">Name</label>
+                                                        <input type="text" id="name" name="user_name" required><br />
+                                                        <label for="mail">e-mail:</label>
+                                                        <!-- Check that it is in a valid email format -->
+                                                        <input type="email" id="mail" name="user_mail"><br />
+                                                        <label for="msg">Message:</label>
+                                                        <textarea id="msg" name="user_message"></textarea><br />
+                                                        <label for="password">Password:</label>
+                                                        <input type="password" id="password" name="password1"><br />
+                                                        <label for="checkbox">IsThisBoxChecked?</label>
+                                                        <input type="checkbox" checked><br />
+                                                        <label for="submitbutton">Submit</label>
+                                                        <input type="submit"><br />
+                                                        <div>
+                                                            <label for="sex">Sex:</label><br />
+                                                            <input type="radio" id="male" name="gender" value="male">
+                                                            <label for="male">Male</label><br>
+                                                            <input type="radio" id="female" name="gender"
+                                                                value="female">
+                                                            <label for="female">Female</label><br>
+                                                            <input type="radio" id="other" name="gender" value="other">
+                                                            <label for="other">Other</label><br />
+                                                        </div>
+                                                        <div>
+                                                            <select name="cars" id="cars">
+                                                                <option value="volvo">Volvo</option>
+                                                                <option value="saab">Saab</option>
+                                                                <option value="opel">Opel</option>
+                                                                <option value="audi">Audi</option>
+                                                            </select>
+                                                        </div>
+                                                    </form>
+                                                    <div class="div"></div>
+                                                    
                 </body>
 
             </html>
