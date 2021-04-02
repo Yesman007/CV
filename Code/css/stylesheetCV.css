@@ -1,6 +1,6 @@
 .pfp {
     display: inline-block;
-    background-color: white;
+    background-image: white;
     color: white;
     width: 90%;
     height: 90%;
@@ -88,3 +88,7 @@ background-color: grey;
     display: inline-flex;
     width : 100%;
   }
+
+  .background {
+    background-image: url("../images/bg");
+}
