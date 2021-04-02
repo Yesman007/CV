@@ -2,8 +2,11 @@
     display: inline-block;
     background-image: white;
     color: white;
-    width: 90%;
-    height: 90%;
+    width: 95%;
+    margin-left:auto;
+    margin-right:auto;
+    
+    height: 95%;
     padding: 5px;
     border-radius: 100%
   }
@@ -90,5 +93,7 @@ background-color: grey;
   }
 
   .background {
-    background-image: url("../images/bg");
+    background-image: url("../images/bg.png");
+    margin-right: 10px;
+    width: 95%;
 }

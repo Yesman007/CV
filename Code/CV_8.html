@@ -22,8 +22,13 @@
 
         <div style="width: 100%; display: inline-flex;">
             <div style="width: 25%" padding: 0;>
-                <div>
-                    <img src=" ./images/daniel.jpg" alt="CodeSpace Logo" class="pfp" />
+                <div class = "background">
+                    <picture  class="pfp">
+                        <source media="(max-width: 650px)" srcset=" ./images/daniel-small.jpg" class = "pfp">
+                        <source media="(max-width: 1000px)" srcset=" ./images/daniel-medium.jpg" class = "pfp">
+                        <img src=" ./images/daniel-full.jpg" alt=" ./images/daniel.jpg" class = "pfp">
+                    </picture>
+                    <!-- <img src=" ./images/daniel.jpg" alt="CodeSpace Logo" class="pfp" /> -->
                 </div>
 
                 <div class="redblock2" ;>
@@ -104,9 +109,9 @@
 
 
                 <b>Civil Engineer</b><br />
-                <div class=workExperience> 
-                <p>Go Consult | January 2019 - August 2019</p>
-                
+                <div class=workExperience>
+                    <p>Go Consult | January 2019 - August 2019</p>
+
                     <ul>
                         <li>Development of wireless sensors for precast hollowcore slabs</li>
                         <li>Design optimal concrete mix designs</li>
