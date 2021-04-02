@@ -59,8 +59,6 @@ margin-right: 10px;
 width: 95%;
 height: 30%;
 background-color: grey; 
-
-
 }
 .redblock1{
   display:inline-flexbox;
@@ -88,7 +86,5 @@ background-color: grey;
 
   .workExperience{
     display: inline-flex;
-    width: 100%;
-
-
+    width : 100%;
   }
