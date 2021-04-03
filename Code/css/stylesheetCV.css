@@ -3,12 +3,15 @@
   background-image: white;
   color: white;
   width: 95%;
-  margin-left: auto;
-  margin-right: auto;
-
-  height: 95%;
-  padding: 5px;
+  border-right:5%;
+  margin: 0;
+  padding: 2%;
   border-radius: 100%;
+}
+
+.background {
+  background-image: url("../images/bg1.png");
+  width: 95%;
 }
 
 .html {
@@ -47,10 +50,7 @@
 }
 
 .body {
-  display: inline-block;
-  border-style: solid;
-  border-color: orange;
-  border-width: 0px;
+  border: 0px;
   margin: 0;
   padding: 0;
 }
@@ -58,9 +58,10 @@
 .redblock2 {
   display: inline-flexbox;
   color: black;
-  margin-right: 10px;
-  width: 95%;
-  height: 30%;
+  padding: 5%;
+  /* margin-right: 10px; */
+  width: 85%;
+  /* height: 30%; */
   background-color: grey;
 }
 .redblock1 {
@@ -92,10 +93,4 @@
 .workExperience {
   display: inline-flex;
   width: 100%;
-}
-
-.background {
-  background-image: url("../images/bg.png");
-  margin-right: 10px;
-  width: 95%;
 }
