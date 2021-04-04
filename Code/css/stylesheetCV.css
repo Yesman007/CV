@@ -94,3 +94,27 @@
   display: inline-flex;
   width: 100%;
 }
+
+/* Cellphone size */
+@media screen and (max-width:768px){
+  .background {
+    background-image: url("../images/bg1.png");
+    width: 95%;
+
+}
+
+/* Tablet size */
+@media screen and (max-width:550px){
+  .background {
+    background-image: url("../images/aws.png");
+    width: 95%;
+
+}
+
+/* Laptop screen size */
+@media screen and (max-width:768px){
+  .background {
+    background-image: url("../images/bg.png");
+    width: 95%;
+
+}
