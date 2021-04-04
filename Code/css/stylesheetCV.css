@@ -1,19 +1,28 @@
 .pfp {
-  display: inline-block;
-  background-image: white;
+  display: inline-flex;
   color: white;
   width: 95%;
-  border-right:5%;
-  margin: 0;
-  padding: 2%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
   border-radius: 100%;
 }
 
-.background {
+#background {
   background-image: url("../images/bg1.png");
-  width: 95%;
+  width: 100%;
+}
+#side {
+  width: 25%;
+  padding: 0%;
 }
 
+#paragraph {
+  width: 75%;
+  display: inline-flex;
+}
 .html {
   display: inline-block;
   background-color: white;
@@ -55,16 +64,14 @@
   padding: 0;
 }
 
-.redblock2 {
+.sideblock {
   display: inline-flexbox;
   color: black;
   padding: 5%;
-  /* margin-right: 10px; */
-  width: 85%;
-  /* height: 30%; */
+  width: 90%;
   background-color: grey;
 }
-.redblock1 {
+.topblock {
   display: inline-flexbox;
   color: black;
   width: 100%;
@@ -74,14 +81,15 @@
   border: 0px;
   margin: 0px;
   margin-top: 0px;
+
   padding: 0px;
 }
 
 .contactIcons {
   display: inline-block;
   color: white;
-  width: 1%;
-  height: 1%;
+  width: 15px;
+  height: auto;
   border-radius: 5%;
   margin-right: 10px;
 }
@@ -92,29 +100,116 @@
 
 .workExperience {
   display: inline-flex;
-  width: 100%;
+  width: 700px;
 }
 
-/* Cellphone size */
-@media screen and (max-width:768px){
-  .background {
-    background-image: url("../images/bg1.png");
-    width: 95%;
-
+.workdiv {
+  height: 20%;
+  width: 20%;
+}
+.workdiv2 {
+  height: auto;
+  width: 90%;
 }
 
 /* Tablet size */
-@media screen and (max-width:550px){
+@media screen and (max-width: 768px) {
   .background {
-    background-image: url("../images/aws.png");
+    background-image: url("../images/bg1.png");
     width: 95%;
+  }
 
+  .personal {
+    font-size: 8px;
+  }
+  .workExperience {
+    display: inline-flex;
+    width: 450px;
+  }
+
+  .workdiv {
+    height: 20%;
+    width: 20%;
+  }
+  .workdiv2 {
+    height: auto;
+    width: 90%;
+  }
 }
 
-/* Laptop screen size */
-@media screen and (max-width:768px){
+/* Cellphone screen size */
+@media screen and (max-width: 550px) {
   .background {
-    background-image: url("../images/bg.png");
+    background-image: url("../images/bg1.png");
     width: 95%;
+  }
+  .workdiv {
+    height: 20%;
+    width: 20%;
+  }
+  .workdiv2 {
+    height: auto;
+    width: 90%;
+  }
+  #side {
+    width: 100%;
+    display: inline;
+    padding: 0%;
+  }
+  #paragraph {
+    width: 100%;
+    display: inline;
+  }
+  .workExperience {
+    display: inline;
+    width: auto;
+  }
 
+  .workdiv {
+    display: inline;
+    height: auto;
+    width: 100%;
+  }
+  .workdiv2 {
+    display: inline;
+    height: auto;
+    width: 100%;
+  }
+  .html {
+    display: inline-block;
+    background-color: white;
+    color: white;
+    width: 11.5%;
+    height: auto;
+    padding: 5px;
+    border-radius: 5%;
+  }
+  .css {
+    display: inline-block;
+    background-color: white;
+    color: white;
+    width: 8%;
+    height: auto;
+    padding: 5px;
+    border-radius: 5%;
+  }
+  .python {
+    display: inline-block;
+    background-color: white;
+    color: white;
+    width: 10%;
+    height: auto;
+    padding: 5px;
+    border-radius: 5%;
+  }
+  .aws {
+    display: inline-block;
+    width: 15%;
+    height: auto;
+    padding: 5px;
+    border-radius: 5%;
+  }
+  .personal {
+    font-size: 12px;
+  }
 }
