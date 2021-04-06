@@ -9,43 +9,62 @@
         <title>CV - Daniel de Villiers Louw - v1</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="./css/stylesheetCV.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </head>
+    <style>
+        .pfp {
+            display: inline-flex;
+            color: white;
+            width: 95%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            border-radius: 100%;
+        }
+    </style>
 
-    <body class='body' ;>
-        <div>
-            <header class="topblock">
-                <div>
-                    <h1 style='margin-top:0px;'>Daniel de Villiers Louw</h1>
-                    <h2 style='margin-bottom:0px;'>CIVIL ENGINEER</h2>
-                </div>
-            </header>
-            <div id='paragraph';>
-                <div id='side';>
-                    <div id="background";>
-                        <picture class="pfp">
-                            <source media="(max-width: 550px)" srcset=" ./images/daniel-small.jpg" class="pfp">
-                            <source media="(max-width: 768px)" srcset=" ./images/daniel-medium.jpg" class="pfp">
-                            <img src=" ./images/daniel-full.jpg" alt="./images/daniel.jpg" class="pfp">
-                        </picture>
-                        <!-- <img src=" ./images/daniel.jpg" alt="CodeSpace Logo" class="pfp" /> -->
-                    </div>
+    <body>
+        <div class="container-fluid full-width">
+            <div class="row">
 
-                    <div class="sideblock" ;>
-                        <div>
+                <header class="col-12 text-center" style="background-color: grey;">
+
+                    <h1>Daniel de Villiers Louw</h1>
+                    <h2>CIVIL ENGINEER</h2>
+
+                </header>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <picture class="pfp">
+                        <source media="(max-width: 550px)" srcset=" ./images/daniel-small.jpg" class="pfp">
+                        <source media="(max-width: 768px)" srcset=" ./images/daniel-medium.jpg" class="pfp">
+                        <img src=" ./images/daniel-full.jpg" alt="./images/daniel.jpg" class="pfp">
+                    </picture>
+                    <!-- <img src=" ./images/daniel.jpg" alt="CodeSpace Logo" class="pfp" /> -->
+
+
+                    <div style="background-color:grey">
+                        <div class="col-md-4 ml-0px">
                             <a href="#PERSONAL PROFILE" class="links">Personal
                                 Profile</a><br />
                             <a href="#AREAS OF EXPERTISE" class="links">Areas of
                                 Expertise</a><br />
-                            <a href="#EDUCATION" class="links">Education</a><br />
                             <a href="#WORK EXPERIENCE" class="links">Work Experience</a>
                             <br />
+                            <a href="#EDUCATION" class="links">Education</a><br />
                             <a href="#Contact me" class="links">Contact me</a><br />
                         </div>
 
                         <br />
 
-                        <div class='personal'>
+                        <div>
                             <h3>Personal details</h3>
                             <ul>
                                 <!-- <li>Mobile: 07341119151</li> -->
@@ -61,9 +80,8 @@
                             </ul>
                         </div>
                     </div>
-
                     <div>
-                        <h2 style="margin-left:5%" ;>SKILLS</h2>
+                        <h2>SKILLS</h2>
                         <img src=" ./images/aws.png" alt="CodeSpace Logo" class="aws" />
                         <img src=" ./images/html.png" alt="CodeSpace Logo" class="html" />
                         <img src=" ./images/css.png" alt="CodeSpace Logo" class="css" />
@@ -71,121 +89,130 @@
                     </div>
                 </div>
 
-                <div style="width:60%; margin-left:10px">
+                <div class="col-md-8">
                     <div>
-                        <h3>PERSONAL PROFILE</h3>
-                        <p>
-                            A Civil Engineer with experience in the construction and concrete
-                            industries. Staying up to date with the latest trends in technology and
-                            economic developments.
-                        </p>
-                    </div>
-
-                    <div>
-                        <h3>AREAS OF EXPERTISE</h3>
-                        <ul>
-                            <li>Technical knowledge of concrete</li>
-                            <li>Cost control</li>
-                            <li>Quality control</li>
-                            <li>Technical report writing</li>
-                            <li>Programming - Python</li>
-                        </ul>
-                    </div>
-
-
-                    <h2>WORK EXPERIENCE</h2>
-                    <b>Site Engineer</b><br />
-                    <div class='workExperience'>
-                        <div class='workdiv'>
-                            <p>WBHO |<br/> September 2019 -<br/> January 2021</p>
+                        <div>
+                            <h3 id="PERSONAL PROFILE"> PERSONAL PROFILE</h3>
+                            <p>
+                                A Civil Engineer with experience in the construction and concrete
+                                industries. Staying up to date with the latest trends in technology and
+                                economic developments.
+                            </p>
                         </div>
-                        <div class='workdiv2'>
+
+                        <div>
+                            <h3 id="AREAS OF EXPERTISE">AREAS OF EXPERTISE</h3>
                             <ul>
-                                <li>Cost control and production monitoring</li>
-                                <li>Site management on emergency work</li>
-                                <li>Quality control on roads and earthworks</li>
-                                <li>Managed concrete batch plant</li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-                    <b>Civil Engineer</b><br />
-                    <div class='workExperience'>
-                        <div class='workdiv'>
-                            <p>Go Consult |<br/> January 2019 -<br/> August 2019</p>
-                        </div>
-                        <div class='workdiv2'>
-                            <ul>
-                                <li>Development of wireless sensors for precast hollowcore slabs</li>
-                                <li>Design optimal concrete mix designs</li>
+                                <li>Technical knowledge of concrete</li>
+                                <li>Cost control</li>
+                                <li>Quality control</li>
                                 <li>Technical report writing</li>
-                                <li>Statistical analysis of process control</li>
-                                <li>Concrete durability tests</li>
+                                <li>Programming - Python</li>
                             </ul>
                         </div>
-                    </div>
 
-                    <b>Student work</b><br />
-                    <p>
-                        Go Consult | December 2017 <br />
-                        WBHO | December 2017 and June 2017
-                    </p>
 
-                    <div>
-                        <h3>EDUCATION</h3>
-                        <b>University of Pretoria</b><br />
-                        <p>Bachelors in Civil Engineering | 2014 - 2019</p>
-                        <b>The institute of Concrete Technology</b><br />
-                        <ul>
-                            <li>
-                                ICT Certificate in Concrete Technology & Construction: Stage 2: General
-                                Principles(Distinction) | 2018
-                            </li>
-                            <li>
-                                ICT Certificate in Concrete Technology & Construction: Stage 3:
-                                Practical Applications | 2019
-                            </li>
-                        </ul>
-                        <b>Online courses</b><br />
-                        <ul>
-                            <li>Technical knowledge of concrete</li>
-                            <li>Cost control</li>
-                            <li>Quality control</li>
-                            <li>Technical report writing</li>
-                            <li>Programming - Python</li>
-                        </ul>
-                        <b>School</b><br />
-                        <p>Hoërskool Florida</p>
-                        <ul>
-                            <li>Best results in school for final NSC examinations | 2013</li>
-                            <li>Cost control</li>
-                        </ul>
+                        <h2 id="WORK EXPERIENCE">WORK EXPERIENCE</h2>
+                        <b>Site Engineer</b><br />
+                        <div>
+                            <div>
+                                <p>WBHO |<br /> September 2019 -<br /> January 2021</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>Cost control and production monitoring</li>
+                                    <li>Site management on emergency work</li>
+                                    <li>Quality control on roads and earthworks</li>
+                                    <li>Managed concrete batch plant</li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <b>Civil Engineer</b><br />
+                        <div>
+                            <div>
+                                <p>Go Consult |<br /> January 2019 -<br /> August 2019</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>Development of wireless sensors for precast hollowcore slabs</li>
+                                    <li>Design optimal concrete mix designs</li>
+                                    <li>Technical report writing</li>
+                                    <li>Statistical analysis of process control</li>
+                                    <li>Concrete durability tests</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <b>Student work</b><br />
+                        <p>
+                            Go Consult | December 2017 <br />
+                            WBHO | December 2017 and June 2017
+                        </p>
+
+                        <div>
+                            <h3 id="EDUCATION">EDUCATION</h3>
+                            <b>University of Pretoria</b><br />
+                            <p>Bachelors in Civil Engineering | 2014 - 2019</p>
+                            <b>The institute of Concrete Technology</b><br />
+                            <ul>
+                                <li>
+                                    ICT Certificate in Concrete Technology & Construction: Stage 2: General
+                                    Principles(Distinction) | 2018
+                                </li>
+                                <li>
+                                    ICT Certificate in Concrete Technology & Construction: Stage 3:
+                                    Practical Applications | 2019
+                                </li>
+                            </ul>
+                            <b>Online courses</b><br />
+                            <ul>
+                                <li>Technical knowledge of concrete</li>
+                                <li>Cost control</li>
+                                <li>Quality control</li>
+                                <li>Technical report writing</li>
+                                <li>Programming - Python</li>
+                            </ul>
+                            <b>School</b><br />
+                            <p>Hoërskool Florida</p>
+                            <ul>
+                                <li>Best results in school for final NSC examinations | 2013</li>
+                                <li>Cost control</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-
-
         </div>
 
-        <footer>
-            <div class="topblock">
-                <h2>Contact me</h2>
+        <footer class="text-center" style="background-color: grey;">
 
-                <a href="tel:+27734119151" class="links"><img src=" ./images/phone.png" alt="phone"
-                        class="contactIcons" /></a>
-                <a href="tel:+27734119151" class="links">073 411 9151</a> <br />
+            <h2 id="Contact me">Contact me</h2>
 
-                <a href="mailto:daniel.louw77@gmail.com" class="links"><img src=" ./images/mail.png" alt="mail"
-                        class="contactIcons" /> <a href="mailto:daniel.louw77@gmail.com"
-                        class="links">daniel.louw77@gmail.com</a><br />
-                    <a href="https://www.linkedin.com/in/daniël-de-villiers-louw-b17a33b1" target="_blank"><img
-                            src=" ./images/linkedin.png" alt="linkedin" class="contactIcons" /><a />
-                        <a href="https://www.linkedin.com/in/daniël-de-villiers-louw-b17a33b1" target="_blank"
-                            class="links">LinkedIn <br /><a />
+            <a href="tel:+27734119151" class="links"><img src=" ./images/phone.png" alt="phone" class="contactIcons" />
+            </a>
+            <a href="tel:+27734119151" class="links">073 411 9151 <br />
+            </a>
 
-            </div>
+            <a href="mailto:daniel.louw77@gmail.com" class="links"><img src=" ./images/mail.png" alt="mail"
+                    class="contactIcons" />
+                <a href="mailto:daniel.louw77@gmail.com" class="links">daniel.louw77@gmail.com<br />
+                </a>
+            </a>
+            <a href="https://www.linkedin.com/in/daniël-de-villiers-louw-b17a33b1" target="_blank">
+                <img src=" ./images/linkedin.png" alt="linkedin" class="contactIcons" />
+                <img />
+            </a>
+            <a href="https://www.linkedin.com/in/daniël-de-villiers-louw-b17a33b1" target="_blank"
+                class="links">LinkedIn <br />
+            </a>
+
         </footer>
+
+
+
+
     </body>
 
 </div>

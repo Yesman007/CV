@@ -111,6 +111,11 @@
   height: auto;
   width: 90%;
 }
+footer{
+  
+  bottom:0;
+  left:0;
+}
 
 /* Tablet size */
 @media screen and (max-width: 768px) {
@@ -179,7 +184,7 @@
     display: inline-block;
     background-color: white;
     color: white;
-    width: 11.5%;
+    width: 60px;
     height: auto;
     padding: 5px;
     border-radius: 5%;
@@ -188,7 +193,7 @@
     display: inline-block;
     background-color: white;
     color: white;
-    width: 8%;
+    width: 45px;
     height: auto;
     padding: 5px;
     border-radius: 5%;
@@ -197,14 +202,14 @@
     display: inline-block;
     background-color: white;
     color: white;
-    width: 10%;
+    width: 70px;
     height: auto;
     padding: 5px;
     border-radius: 5%;
   }
   .aws {
     display: inline-block;
-    width: 15%;
+    width: 100px;
     height: auto;
     padding: 5px;
     border-radius: 5%;
