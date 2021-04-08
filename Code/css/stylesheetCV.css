@@ -1,40 +1,122 @@
-.pfp {
-    display: inline-block;
-    background-color: white;
-    color: white;
-    width: 90%;
-    height: 90%;
-    padding: 5px;
-    border-radius: 100%
-  }
+* {
+  font-size: 100%;
+  font-family: Font Awesome 5 Free;
+ }
 
-  .html {
-    display: inline-block;
-    background-color: white;
-    color: white;
-    width: 25%;
-    height: 25%;
-    padding: 5px;
-    border-radius: 5%;
+.pfp {
+  display: inline-flex;
+  position: relative;
+  color: white;
+  width: 95%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border-radius: 100%;
+}
+
+body {
+  background-image: url("../images/backgroundEarth.jpg");
+  background-color: #cccccc;
+ }
+.carousel {
+  width:100%;
+  max-height:160px;
+  background: white;
+  margin-bottom:10px;
+  padding:10px;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 10px;
+  text-indent: 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  background-color: black;
+  box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5); 
+  margin-bottom:-8px;
+}
+
+.c1{
+  width: auto;
+  max-width:90%;
+  max-height: 150px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom:20px;
+
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+  display: block;
+  height: 20%;
+  max-width: 100%;
+  line-height: 1;
+  margin:auto;
+  width: 100%; 
   }
-  .css {
-    display: inline-block;
-    background-color: white;
-    color: white;
-    width: 18%;
-    height: 18%;
-    padding: 5px;
-    border-radius: 5%;
+.carousel-control-prev-icon, .carousel-control-next-icon {
+
+  /* outline: black; */
+  background-color: rgba(0, 0, 0, 0.3);
+  /* background-size: 100%, 100%; */
+  border-radius: 50%;
+  border: 1px solid black;
+  color: rgb(180, 180, 180);
+}
+.rotate {
+  animation: rotation 20s infinite linear;
+  transform-origin: center;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
   }
-  .python {
-    display: inline-block;
-    background-color: white;
-    color: white;
-    width: 25%;
-    height: 25%;
-    padding: 5px;
-    border-radius: 5%;
+  90% {
+    transform: rotate(0deg);
   }
+  99% {
+    transform: rotate(359deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.html {
+  display: inline-block;
+  background-color: white;
+  color: white;
+  width: 25%;
+  height: 25%;
+  padding: 5px;
+  border-radius: 5%;
+}
+.css {
+  display: inline-block;
+  background-color: white;
+  color: white;
+  width: 18%;
+  height: 18%;
+  padding: 5px;
+  border-radius: 5%;
+}
+.python {
+  display: inline-block;
+  background-color: white;
+  color: white;
+  width: 25%;
+  height: 25%;
+  padding: 5px;
+  border-radius: 5%;
+}
 .aws {
   display: inline-block;
   width: 30%;
@@ -43,48 +125,23 @@
   border-radius: 5%;
 }
 
-.body {
+.contactIcons {
   display: inline-block;
-  border-style:solid;
-  border-color: orange;
-  border-width: 0px;
-  margin:0;
-  padding:0;
+  color: white;
+  width: 15px;
+  height: auto;
+  border-radius: 5%;
+  margin-right: 10px;
+}
+.links {
+  color: black;
+  text-decoration: none;
 }
 
-.redblock2{
-display:inline-flexbox;
-color:black;
-margin-right: 10px;
-width: 95%;
-height: 30%;
-background-color: grey; 
+
+footer{
+  
+  bottom:0;
+  left:0;
+  padding-bottom:5px;
 }
-.redblock1{
-  display:inline-flexbox;
-  color:wblack;
-  width: 100%;
-  height: 100%;
-  background-color: grey;
-  text-align: center; 
-  margin:0px;
-  padding: 0px;
-  }
-
-  .contactIcons {
-    display: inline-block;
-    color: white;
-    width: 1%;
-    height: 1%;
-    border-radius: 5%;
-    margin-right: 10px;
-  }
-  .links{
-    color: black;
-    text-decoration: none;
-  }
-
-  .workExperience{
-    display: inline-flex;
-    width : 100%;
-  }
