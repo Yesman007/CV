@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<div>
+<div style="color:white">
 
     <head>
         <meta charset="utf-8" />
@@ -9,6 +9,7 @@
         <title>CV - Daniel de Villiers Louw - v1</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/all.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="./css/stylesheetCV.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -17,13 +18,42 @@
     </head>
 
     <body>
-        <div class="container-fluid full-width">
+
+        
+
+        <div class="container-fluid full-width" style=" background-image: url('./images/aws.jpg')" ;>
             <div class="row">
 
-                <header class="col-12 text-center" style="background-color: grey;">
-
-                    <h1 class="display-4">Daniel de Villiers Louw</h1>
-                    <h2 class="display-6">CIVIL ENGINEER</h2>
+                <header class="col-12 text-center" style="background-color: #384a60 ;">
+                    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #384a60";>
+                        <a class="navbar-brand" href="#"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+            
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#PERSONAL DETAILS">Personal details <span
+                                            class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#WORK EXPERIENCE">Work experience</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#EDUCATION">Education</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#Contact me">Contact me</a>
+                                </li>
+                            </ul>
+                            <form class="form-inline my-2 my-lg-0">
+                            </form>
+                        </div>
+                    </nav>
+                    <h1 class="display-4" style="color:black">Daniel de Villiers Louw</h1>
+                    <h2 class="display-6" style="color:black">CIVIL ENGINEER</h2>
 
                 </header>
 
@@ -31,29 +61,17 @@
             </div>
             <div class="row">
                 <div class="col-sm-4">
+                    <div class=rotate>
+                        <picture class="pfp">
+                            <source media="(max-width: 550px)" srcset=" ./images/daniel-small.jpg" class="pfp">
+                            <source media="(max-width: 768px)" srcset=" ./images/daniel-medium.jpg" class="pfp">
+                            <img src=" ./images/daniel-full.jpg" alt="./images/daniel.jpg" class="pfp">
+                        </picture>
+                    </div>
 
-                    <picture class="pfp">
-                        <source media="(max-width: 550px)" srcset=" ./images/daniel-small.jpg" class="pfp">
-                        <source media="(max-width: 768px)" srcset=" ./images/daniel-medium.jpg" class="pfp">
-                        <img src=" ./images/daniel-full.jpg" alt="./images/daniel.jpg" class="pfp">
-                    </picture>
-
-                    <div style="background-color:grey">
-                        <div class="col-sm-12">
-                            <a href="#PERSONAL PROFILE" class="links">Personal
-                                Profile</a><br />
-                            <a href="#AREAS OF EXPERTISE" class="links">Areas of
-                                Expertise</a><br />
-                            <a href="#WORK EXPERIENCE" class="links">Work Experience</a>
-                            <br />
-                            <a href="#EDUCATION" class="links">Education</a><br />
-                            <a href="#Contact me" class="links">Contact me</a><br />
-                        </div>
-
-                        <br />
-
-                        <div>
-                            <h3 style="padding:5px">Personal details</h3>
+                    <div>
+                        <div style="color:white">
+                            <h3 id="PERSONAL DETAILS" style="padding:5px">Personal details</h3>
                             <ul>
                                 <!-- <li>Mobile: 07341119151</li> -->
                                 <!-- <li>Email: daniel.louw77@gmail.com</li> -->
@@ -67,21 +85,47 @@
                                 </li>
                             </ul>
                         </div>
+
                     </div>
-
-
-
-
-
                     <div>
+                        <h2 id="SKILLS" style="padding-bottom:25px">SKILLS</h2>
 
-                        <h2>SKILLS</h2>
-                        <img src=" ./images/aws.png" alt="CodeSpace Logo" class="aws" />
-                        <img src=" ./images/html.png" alt="CodeSpace Logo" class="html" />
-                        <img src=" ./images/css.png" alt="CodeSpace Logo" class="css" />
-                        <img src=" ./images/python.png" alt="CodeSpace Logo" class="python" />
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                            </ol>
 
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src=" ./images/aws.png" class="c1" style:"max-heigth:50px" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src=" ./images/html.png" class="c1" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src=" ./images/css.png" class="c1" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src=" ./images/python2.png" class="c1" alt="...">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
                     </div>
+
+
                 </div>
 
                 <div class="col-sm-8">
@@ -163,17 +207,15 @@
                             </ul>
                             <b>Online courses</b><br />
                             <ul>
-                                <li>Technical knowledge of concrete</li>
-                                <li>Cost control</li>
-                                <li>Quality control</li>
-                                <li>Technical report writing</li>
-                                <li>Programming - Python</li>
+                                <li>AWS Certified Cloud Practitioner | October 2020</li>
+                                <li>Complete Python boot camp (Python 3) Udemy | April 2020</li>
+                                <li>Intermediate Python Udemy | April 2020</li>
+                                <li>Algorithmic Trading & Quantitative Analysis using Python Udemy |  June 2020</li>
                             </ul>
                             <b>School</b><br />
                             <p>Hoërskool Florida</p>
                             <ul>
                                 <li>Best results in school for final NSC examinations | 2013</li>
-                                <li>Cost control</li>
                             </ul>
                         </div>
                     </div>
@@ -182,9 +224,9 @@
         </div>
 
 
-        <footer class="text-center" style="background-color: grey;">
+        <footer class="text-center" style="background-color: #384a60;">
 
-            <h2 id="Contact me">Contact me</h2>
+            <h2 id="Contact me" style="color:black">Contact me</h2>
 
             <a href="tel:+27734119151" class="links"><img src=" ./images/phone.png" alt="phone" class="contactIcons" />
             </a>
@@ -209,37 +251,39 @@
             <a href="#myModal" data-toggle="modal" data-target="#myModal">
                 <img src=" ./images/github.png" alt="linkedin" class="contactIcons" />
                 <img />
-                    <a class = 'links' href="#myModal" data-toggle="modal" data-target="#myModal">GitHub</a>
+                <a class='links' href="#myModal" data-toggle="modal" data-target="#myModal">GitHub</a>
 
-            <!-- Modal -->
-            <div id="myModal" class="modal fade" role="dialog">
-                <div class="modal-dialog">
+                <!-- Modal -->
+                <div id="myModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
 
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">GITHUB</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <!-- Modal content-->
+                        <div class="modal-content" style="color:black">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">GITHUB</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 
-                            </button>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Do you want to follow the link to my GitHub repository?</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                <a href="https://github.com/Yesman007" target="_blank" class="btn btn-primary">Follow
+                                    link</a>
+                            </div>
                         </div>
-                        <div class="modal-body">
-                            <p>Do you want to follow the link to my GitHub repository?</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                            <a href="https://github.com/Yesman007" target="_blank" class="btn btn-primary">Follow link</a>
-                        </div>
+
                     </div>
-
                 </div>
-            </div>
         </footer>
 
 
 
 
     </body>
+
 </div>
 
 </html>
