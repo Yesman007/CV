@@ -59,7 +59,7 @@ body {
   max-width: 100%;
   line-height: 1;
   margin:auto;
-  width: 100%; // Add this
+  width: 100%; 
   }
 .carousel-control-prev-icon, .carousel-control-next-icon {
 
@@ -90,8 +90,6 @@ body {
   }
 }
 
-
-}
 .html {
   display: inline-block;
   background-color: white;
