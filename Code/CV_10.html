@@ -15,19 +15,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </head>
-    <style>
-        .pfp {
-            display: inline-flex;
-            color: white;
-            width: 95%;
-            height: auto;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 2%;
-            margin-bottom: 2%;
-            border-radius: 100%;
-        }
-    </style>
 
     <body>
         <div class="container-fluid full-width">
@@ -35,23 +22,24 @@
 
                 <header class="col-12 text-center" style="background-color: grey;">
 
-                    <h1>Daniel de Villiers Louw</h1>
-                    <h2>CIVIL ENGINEER</h2>
+                    <h1 class="display-4">Daniel de Villiers Louw</h1>
+                    <h2 class="display-6">CIVIL ENGINEER</h2>
 
                 </header>
+
+
             </div>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-sm-4">
+
                     <picture class="pfp">
                         <source media="(max-width: 550px)" srcset=" ./images/daniel-small.jpg" class="pfp">
                         <source media="(max-width: 768px)" srcset=" ./images/daniel-medium.jpg" class="pfp">
                         <img src=" ./images/daniel-full.jpg" alt="./images/daniel.jpg" class="pfp">
                     </picture>
-                    <!-- <img src=" ./images/daniel.jpg" alt="CodeSpace Logo" class="pfp" /> -->
-
 
                     <div style="background-color:grey">
-                        <div class="col-md-4 ml-0px">
+                        <div class="col-sm-12">
                             <a href="#PERSONAL PROFILE" class="links">Personal
                                 Profile</a><br />
                             <a href="#AREAS OF EXPERTISE" class="links">Areas of
@@ -65,7 +53,7 @@
                         <br />
 
                         <div>
-                            <h3>Personal details</h3>
+                            <h3 style="padding:5px">Personal details</h3>
                             <ul>
                                 <!-- <li>Mobile: 07341119151</li> -->
                                 <!-- <li>Email: daniel.louw77@gmail.com</li> -->
@@ -80,16 +68,23 @@
                             </ul>
                         </div>
                     </div>
+
+
+
+
+
                     <div>
+
                         <h2>SKILLS</h2>
                         <img src=" ./images/aws.png" alt="CodeSpace Logo" class="aws" />
                         <img src=" ./images/html.png" alt="CodeSpace Logo" class="html" />
                         <img src=" ./images/css.png" alt="CodeSpace Logo" class="css" />
                         <img src=" ./images/python.png" alt="CodeSpace Logo" class="python" />
+
                     </div>
                 </div>
 
-                <div class="col-md-8">
+                <div class="col-sm-8">
                     <div>
                         <div>
                             <h3 id="PERSONAL PROFILE"> PERSONAL PROFILE</h3>
@@ -186,6 +181,7 @@
             </div>
         </div>
 
+
         <footer class="text-center" style="background-color: grey;">
 
             <h2 id="Contact me">Contact me</h2>
@@ -208,13 +204,42 @@
                 class="links">LinkedIn <br />
             </a>
 
+
+            <!-- Trigger the modal -->
+            <a href="#myModal" data-toggle="modal" data-target="#myModal">
+                <img src=" ./images/github.png" alt="linkedin" class="contactIcons" />
+                <img />
+                    <a class = 'links' href="#myModal" data-toggle="modal" data-target="#myModal">GitHub</a>
+
+            <!-- Modal -->
+            <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">GITHUB</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Do you want to follow the link to my GitHub repository?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                            <a href="https://github.com/Yesman007" target="_blank" class="btn btn-primary">Follow link</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </footer>
 
 
 
 
     </body>
-
 </div>
 
 </html>

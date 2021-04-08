@@ -1,5 +1,6 @@
 .pfp {
   display: inline-flex;
+  position: relative;
   color: white;
   width: 95%;
   height: auto;
@@ -9,6 +10,7 @@
   margin-bottom: 2%;
   border-radius: 100%;
 }
+
 
 #background {
   background-image: url("../images/bg1.png");
@@ -98,6 +100,8 @@
   text-decoration: none;
 }
 
+
+
 .workExperience {
   display: inline-flex;
   width: 700px;
@@ -115,6 +119,7 @@ footer{
   
   bottom:0;
   left:0;
+  padding-bottom:5px;
 }
 
 /* Tablet size */
