@@ -3,8 +3,13 @@
   font-family: Font Awesome 5 Free;
  }
 
+
+ .row:before, .row:after {
+  display: none !important;
+ }
+
 .pfp {
-  display: inline-flex;
+  display: inline-flexbox;
   position: relative;
   color: white;
   width: 95%;
